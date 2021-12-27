@@ -1,4 +1,4 @@
-from Tkinter import *
+from tkinter import *
 from solver import Box as SolverBox
 from solver import *
 import tkFont
