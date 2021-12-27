@@ -148,7 +148,7 @@ def new_puzzle():
 	global hint_level
 	hint_level = 0
 	n = select_puzzle()
-	print "Puzzle Number", str(n)
+	print("Puzzle Number", str(n))
 	find_solution()
 	print_puzzle("before mainloop")
 	for b in box_list:
@@ -227,7 +227,7 @@ root.columnconfigure(0, weight=1)
 root.columnconfigure(1, weight=1)
 
 n = select_puzzle()
-print "Puzzle Number", str(n)
+print("Puzzle Number", str(n))
 find_solution()
 
 print_puzzle("before mainloop")
