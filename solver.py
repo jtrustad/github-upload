@@ -168,7 +168,7 @@ def get_progress_counts():
 def print_puzzle(comment):
 
     print
-    print "========", comment
+    print("========", comment)
 
     for r in range(9):
 
@@ -201,9 +201,9 @@ def print_puzzle(comment):
 
     (fail_count, state_count, hint_count) = get_progress_counts()
 
-    print "fail_count:", fail_count, \
+    print("fail_count:", fail_count, \
           "  state_count:", state_count, \
-          "  hint_count:", hint_count
+          "  hint_count:", hint_count)
     print
         
 #### Reset the state and hint variables to discard any computations we
@@ -447,7 +447,7 @@ def solve_all_puzzles():
     create_board()
 
     for n in range(len(puzzle_list)):
-        print "Puzzle number: " + str(n)
+        print("Puzzle number: " + str(n))
         select_puzzle(n)
         find_solution()
 
@@ -456,7 +456,7 @@ def solve_all_puzzles():
         if solution_count > 1:
             count = solution_count
             find_solution()
-            print "Solutions reduced from", count, "to", solution_count
+            print("Solutions reduced from", count, "to", solution_count)
             assert(solution_count == 1)
 
 
@@ -481,7 +481,7 @@ def demo():
     else:
         n = select_puzzle()
     
-    print "Puzzle Number", str(n)
+    print("Puzzle Number", str(n))
 
     print_puzzle("Freshly loaded puzzle")
 
